@@ -4,18 +4,17 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+NetSentinel is a cloud-based anomaly detection system that monitors real-time network traffic to identify potential security threats. By leveraging Netlify’s advanced features—such as [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming), [Edge Middleware](https://docs.astro.build/en/guides/middleware/), and [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/)—NetSentinel can continuously update its analytics dashboards without impacting site performance.
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
+Our solution uses an unsupervised learning model (Isolation Forest) to spot suspicious network patterns like DDoS attempts or insider threats. The on-demand build and caching techniques ensure that your visitors always receive fast, secure pages, while the underlying anomaly detection engine works behind the scenes to keep your environment safe.
 `;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to NetSentinel">
     <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
+    <h1 class="mb-10">NetSentinel - Cloud-based Anomaly Detection</h1>
     <Markdown content={explainer} class="mb-10 text-lg" />
     <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        <a href="https://github.com/YourUser/NetSentinel" class="btn btn-lg sm:min-w-64">View on GitHub</a>
     </p>
 </Layout>
